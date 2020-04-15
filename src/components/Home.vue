@@ -252,17 +252,14 @@ a:hover {
   width: 100%;
 }
 
+/* INDIVIDUAL EL STYLING */
+
+
 .clearfix {
   overflow: auto;
   clear: none;
   width: 100%;
 }
-// .video {
-//   height: 40vh;
-//   clear: both;
-//   margin: 0 auto;
-//   text-align: center;
-// }
 
 #contact {
 
@@ -275,6 +272,94 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  /* INDIVIDUAL EL STYLING */
+
+  .bg-img.float-c.mel {
+    padding-top: 50px;
+    margin-left: -20%;
+  }
+
+  .bg-img.float-r.fountain {
+    margin-right: 10%;
+  }
+
+  .bg-img.float-r.flower {
+    margin-right: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .bg-img.float-c.tangerine {
+    width: 130%;
+    margin-left: -10%;
+  }
+
+  .bg-img.float-c.tvline {
+      background-size: contain;
+      margin: 0 auto;
+      height: 100vh;
+      margin-top: 0;
+  }
+
+  .bg-img.center.jules {
+      margin-top: 0;
+      height: 60vh;
+  }
+
+  .bg-img.float-l.florals {
+      width: 100%;
+      margin-top: 0;
+  }
+
+  .bg-img.float-r.greendress {
+      margin-top: 0;
+      width: 100%;
+      height: 40vh;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+  }
+
+  .bg-img.float-r.blob {
+      height: 50vh;
+      width: 100%;
+      margin-top: 0;
+      margin-right: 0;
+  }
+
+  .bg-img.float-l.steve {
+      width: 100%;
+      background-size: cover;
+      height: 100vh;
+      margin-top: 0;
+      margin-left: 0;
+  }
+
+  .bg-img.float-l.desk {
+    height: 50vh;
+    width: 40%;
+    margin-left: -20%;
+  }
+
+  .bg-img.float-r.steve_alt {
+    width: 80%;
+    height: 70vh;
+    margin-top: -65%;
+    margin-right: -20%;
+  }
+
+  .bg-img.float-r.foundfilm {
+    height: 40vh;
+    margin-top: -20%;
+    width: 100%;
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
+  }
+
+  /* INDIVIDUAL EL STYLING */
+}
 
 @media screen and (min-width: 1024px) {
 

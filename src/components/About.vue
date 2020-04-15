@@ -74,20 +74,23 @@ export default {
 </script>
 
 <style lang="scss">
-
 #about .page-logo {
-  position: static;
-  max-width: 100%;
+    position: static;
+    max-width: 100%;
+
 }
 
 #about {
+    .bio-text {
+        height: 130vh;
+    }
     .bio-img {
         background-image: url("../assets/abt_bg.png");
     }
     .bio-text {
         width: 100%;
         margin: 0 auto;
-        height: auto;
+        // height: auto;
         p {
             color: #ed2d2d;
             font-weight: bold;
@@ -96,7 +99,7 @@ export default {
     }
 
     .abt-text {
-      position: static;
+        position: static;
     }
 
     .bg-img.l-illustration {
@@ -120,7 +123,7 @@ export default {
 #contact {
     .contact-img {
         img {
-          max-width: 200px;
+            max-width: 200px;
         }
     }
     .contact-text {
@@ -132,18 +135,22 @@ export default {
     }
 }
 
+@media screen and (min-height: 916px) {
+    #about {
+        .bio-text {
+            height: 75vh;
+        }
+    }
+}
+
 @media screen and (min-width: 1024px) {
 
     #about .page-logo {
-      max-width: 300px;
+        max-width: 300px;
     }
 
     #about {
         .rows {
-
-            .bio-text {
-                height: 75vh;
-            }
 
             .bio-img {
                 background-image: url("../assets/abt_bg.png");

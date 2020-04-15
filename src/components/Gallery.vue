@@ -8,6 +8,9 @@
         <div class="bg-img l-illustration" :style="{ backgroundImage: `url(${backgroundUrl1})` }"></div>
 
         <div class="gallery-text">
+          <div class="powr-photo-gallery" id="30e2e71b_1586120652"></div>
+        </div>
+        <!-- <div class="gallery-text">
 
           <div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;" data-link="https://photos.app.goo.gl/CwyCsqhQR5qgvKd88" data-title="Earthly Sculptures " data-description="10 new photos added to shared album">
             <object data="https://lh3.googleusercontent.com/jMuQ6DHnHWBMHW2Ea6ULpCAboKLQnvlUIq1XCwMHv-ZKu7pzCiIoycnNK8ZhzuTac6BPWGCC3Q4th1jl_BEsD7vd8Xxqs1_MCzadaY1HFInzpNxXt9jxYYI0aP6-tUtZY2dgeZD_9g=w1920-h1080"></object>
@@ -112,7 +115,7 @@
 
 
 
-        </div>
+        </div> -->
 
         <div class="bg-img r-illustration" :style="{ backgroundImage: `url(${backgroundUrl2})` }"></div>
 
@@ -164,11 +167,13 @@ export default {
     }
   },
   mounted() {
+    // let googlePhotoScript = document.createElement('script')
+    // googlePhotoScript.setAttribute('src', 'https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js')
+    // document.head.appendChild(googlePhotoScript)
 
-
-    let googlePhotoScript = document.createElement('script')
-    googlePhotoScript.setAttribute('src', 'https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js')
-    document.head.appendChild(googlePhotoScript)
+    let galleryScript = document.createElement('script')
+    galleryScript.setAttribute('src', 'https://www.powr.io/powr.js?platform=wordpress')
+    document.head.appendChild(galleryScript)
   }
 }
 </script>
