@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # vue-slf
 
 ## Project setup
@@ -22,3 +23,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# slf-vue
+Smells like flowers vue front
+>>>>>>> 609c3065ab16ddde9d396d5cba46b86a11e24e76
