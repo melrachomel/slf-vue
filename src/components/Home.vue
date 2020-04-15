@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <!--  -->
-    <!-- {{ info }} -->
+<div>
+  <!--  -->
+  <!-- {{ info }} -->
 
-    <div class="rows animated fadeIn">
+  <div class="rows animated fadeIn">
     <!-- Row1  -->
     <div class="bg-img float-r combine-r-30 fountain" :style="{ backgroundImage: `url(${backgroundUrl3})` }"></div>
     <!-- Row2  -->
@@ -31,33 +31,32 @@
     <!-- Row9 -->
     <div class="bg-img float-r combine-r-30 foundfilm" :style="{ backgroundImage: `url(${backgroundUrl14})` }"></div>
 
-</div>
-<!-- end rows -->
-<div id="contact" class="clearfix">
-  <div class="rows">
-    <div class="contact-img">
-      <img src="../assets/abt_contact.png" alt="Contact Beth">
-    </div>
-    <div class="contact-text">
-    <p>Bethany Rose Puttkemery (she/her)<br>
-      <a href="mailto:hello@smellslikeflowers.com">hello@smellslikeflowers.com</a><br>
-      <a href="#">@bethanyroserose</a>
-    </p>
+  </div>
+  <!-- end rows -->
+  <div id="contact" class="clearfix">
+    <div class="rows">
+      <div class="contact-img">
+        <img src="../assets/abt_contact.png" alt="Contact Beth">
+      </div>
+      <div class="contact-text">
+        <p>Bethany Rose Puttkemery (she/her)<br>
+          <a href="mailto:hello@smellslikeflowers.com">hello@smellslikeflowers.com</a><br>
+          <a href="#">@bethanyroserose</a>
+        </p>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- <div class="video">
+  <!-- <div class="video">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/AJX8I7fWtcg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div> -->
 
 
 
-  </div>
+</div>
 </template>
 
 <script>
-
 import backgroundUrl1 from '@/assets/hp_flower.png'
 import backgroundUrl2 from '@/assets/hp_bethwynne.jpg'
 import backgroundUrl3 from '@/assets/hp_fountain.png'
@@ -81,7 +80,7 @@ export default {
   components: {
     // VueInstagram
   },
-  data () {
+  data() {
     return {
       isHome: true,
       info: null,
@@ -119,74 +118,73 @@ export default {
       backgroundUrl16
     }
   },
-  mounted () {
+  mounted() {
 
   }
 }
 </script>
 
 <style lang="scss">
-
 #site-logo {
-  margin-top: 100px;
-  position: static;
-  max-width: 300px;
+    margin-top: 100px;
+    position: static;
+    max-width: 300px;
 }
 
 h3 {
-  margin: 40px 0 0;
+    margin: 40px 0 0;
 }
 ul {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 li {
-  display: inline-block;
-  margin: 0 10px;
+    display: inline-block;
+    margin: 0 10px;
 }
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .rows {
-  // overflow: auto;
-  clear: both;
-  .bg-img {
-    height: 50vh;
-    width: 100%;
-    margin: 0 auto;
-    position: static;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
+    // overflow: auto;
+    clear: both;
+    .bg-img {
+        height: 50vh;
+        width: 100%;
+        margin: 0 auto;
+        position: static;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
 }
 
 /* INDIVIDUAL EL STYLING */
 
 .bg-img.float-c.mel {
-  padding-top: 50px;
-  margin-left: -20%;
+    padding-top: 50px;
+    margin-left: -20%;
 }
 
 .bg-img.float-r.fountain {
-  margin-right: 10%;
+    margin-right: 10%;
 }
 
-.bg-img.float-r.flower {
-  margin-right: 0;
-  width: 100%;
-  height: 100vh;
-}
+// .bg-img.float-r.flower {
+//     margin-right: 0;
+//     width: 100%;
+//     height: 100vh;
+// }
 
 .bg-img.float-c.tangerine {
-  width: 130%;
-  margin-left: -10%;
+    width: 130%;
+    margin-left: -10%;
 }
 
 .bg-img.float-c.tvline {
@@ -231,296 +229,322 @@ a:hover {
 }
 
 .bg-img.float-l.desk {
-  height: 50vh;
-  width: 40%;
-  margin-left: -20%;
-}
-
-.bg-img.float-r.steve_alt {
-  width: 80%;
-  height: 70vh;
-  margin-top: -65%;
-  margin-right: -20%;
-}
-
-.bg-img.float-r.foundfilm {
-  height: 40vh;
-  margin-top: -20%;
-  width: 100%;
-  background-position: center center;
-  background-size: contain;
-  width: 100%;
-}
-
-/* INDIVIDUAL EL STYLING */
-
-
-.clearfix {
-  overflow: auto;
-  clear: none;
-  width: 100%;
-}
-
-#contact {
-
-  .contact-text {
-    p {
-      color: #ed2d2d;
-      font-weight: bold;
-      font-size: 1.5em;
-    }
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  /* INDIVIDUAL EL STYLING */
-
-  .bg-img.float-c.mel {
-    padding-top: 50px;
-    margin-left: -20%;
-  }
-
-  .bg-img.float-r.fountain {
-    margin-right: 10%;
-  }
-
-  .bg-img.float-r.flower {
-    margin-right: 0;
-    width: 100%;
-    height: 100vh;
-  }
-
-  .bg-img.float-c.tangerine {
-    width: 130%;
-    margin-left: -10%;
-  }
-
-  .bg-img.float-c.tvline {
-      background-size: contain;
-      margin: 0 auto;
-      height: 100vh;
-      margin-top: 0;
-  }
-
-  .bg-img.center.jules {
-      margin-top: 0;
-      height: 60vh;
-  }
-
-  .bg-img.float-l.florals {
-      width: 100%;
-      margin-top: 0;
-  }
-
-  .bg-img.float-r.greendress {
-      margin-top: 0;
-      width: 100%;
-      height: 40vh;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center center;
-  }
-
-  .bg-img.float-r.blob {
-      height: 50vh;
-      width: 100%;
-      margin-top: 0;
-      margin-right: 0;
-  }
-
-  .bg-img.float-l.steve {
-      width: 100%;
-      background-size: cover;
-      height: 100vh;
-      margin-top: 0;
-      margin-left: 0;
-  }
-
-  .bg-img.float-l.desk {
     height: 50vh;
     width: 40%;
     margin-left: -20%;
-  }
+}
 
-  .bg-img.float-r.steve_alt {
+.bg-img.float-r.steve_alt {
     width: 80%;
     height: 70vh;
     margin-top: -65%;
     margin-right: -20%;
-  }
+}
 
-  .bg-img.float-r.foundfilm {
+.bg-img.float-r.foundfilm {
     height: 40vh;
     margin-top: -20%;
     width: 100%;
     background-position: center center;
     background-size: contain;
     width: 100%;
-  }
+}
 
-  /* INDIVIDUAL EL STYLING */
+/* INDIVIDUAL EL STYLING */
+
+.clearfix {
+    overflow: auto;
+    clear: none;
+    width: 100%;
+}
+
+#contact {
+
+    .contact-text {
+        p {
+            color: #ed2d2d;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media screen and (min-width: 1366px) {
+  .rows {
+    .bg-img.float-r.flower {
+        margin-right: -40%;;
+        width: 100%;
+        height: 100vh;
+        margin-top: 0%;
+    }
+
+    .bg-img.center.jules {
+      height: 160vh;
+    }
+
+    .bg-img.float-l.steve {
+        width: 100%;
+        background-size: cover;
+        height: 170vh;
+        margin-top: 10%;
+        margin-left: -10%;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1365px) {
+
+    .rows {
+        /* INDIVIDUAL EL STYLING */
+
+        .bg-img.float-c.mel {
+            padding-top: 50px;
+            margin-left: -20%;
+        }
+
+        .bg-img.float-r.fountain {
+            margin-right: 10%;
+        }
+
+        .bg-img.float-r.flower {
+            margin-right: -20%;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .bg-img.float-c.tangerine {
+            width: 130%;
+            margin-left: -10%;
+        }
+
+        .bg-img.float-c.tvline {
+            background-size: contain;
+            margin: 0 auto;
+            height: 100vh;
+            margin-top: -20%;
+        }
+
+        .bg-img.center.jules {
+            margin-top: 0;
+            height: 160vh;
+
+        }
+
+        .bg-img.float-l.florals {
+            width: 100%;
+            margin-top: 0;
+            margin-left: 20%;
+        }
+
+        .bg-img.float-r.greendress {
+            margin-top: 0;
+            width: 100%;
+            height: 40vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .bg-img.float-r.blob {
+            height: 50vh;
+            width: 100%;
+            margin-top: 0;
+            margin-right: 0;
+        }
+
+        .bg-img.float-l.steve {
+            width: 100%;
+            background-size: cover;
+            height: 230vh;
+            margin-top: 0;
+            margin-left: -10%;
+        }
+
+        .bg-img.float-l.desk {
+            height: 50vh;
+            width: 40%;
+            margin-left: -20%;
+        }
+
+        .bg-img.float-r.steve_alt {
+            width: 80%;
+            height: 70vh;
+            margin-top: -60%;
+            margin-right: 0%;
+        }
+
+        .bg-img.float-r.foundfilm {
+            height: 40vh;
+            margin-top: -10%;
+            margin-right: -10%;
+            width: 100%;
+            background-position: center center;
+            background-size: contain;
+            width: 100%;
+        }
+
+    }
+
+    /* INDIVIDUAL EL STYLING */
 }
 
 @media screen and (min-width: 1024px) {
 
-
-  #site-logo {
-    margin-top: initial;
-    position: fixed;
-    z-index: 9999;
-    max-width: 300px;
-  }
-
-
-
-  .rows {
-    max-width: 1024px;
-    margin: 0 auto;
-    .bg-img {
-      background: no-repeat;
-      background-size: contain;
-      height: 100vh;
-      /* width: 100px; */
+    #site-logo {
+        margin-top: initial;
+        position: fixed;
+        z-index: 9999;
+        max-width: 300px;
     }
 
-    .float-l {
-      /* float: left; */
-      margin: 0 auto 0 0;
-      background-position-x: left;
+    .rows {
+        max-width: 1024px;
+        margin: 0 auto;
+        .bg-img {
+            background: no-repeat;
+            background-size: contain;
+            height: 100vh;
+            /* width: 100px; */
+        }
+
+        .float-l {
+            /* float: left; */
+            margin: 0 auto 0 0;
+            background-position-x: left;
+        }
+
+        .float-c {
+            margin: 0 auto;
+            /* width: 400px; */
+            background-position: center center;
+        }
+
+        .float-r {
+            /* float: right; */
+            margin: 0 0 auto auto;
+            background-position-x: right;
+        }
+
+        .combine-r-50 {
+            background-position-x: right;
+            width: 50%;
+            float: right;
+        }
+
+        .combine-r-30 {
+            background-position-x: right;
+            width: 30%;
+            float: right;
+        }
+
+        .combine-r-65 {
+            background-position-x: right;
+            width: 65%;
+            float: right;
+        }
+
+        .combine-l-30 {
+            background-position-x: left;
+            width: 30%;
+            float: left;
+        }
+
+        .combine-l-50 {
+            background-position-x: left;
+            width: 50%;
+            float: left;
+        }
+
+        .combine-c-100 {
+            /* background-position-x: left; */
+            width: 100%;
+            position: absolute;
+            /* float: left; */
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .margin-top-offset-15 {
+            margin-top: -15%;
+        }
+
+        .margin-top-offset-35 {
+            margin-top: -35%;
+        }
+
+        .margin-top-offset-50 {
+            margin-top: -50%;
+        }
+
+        .margin-top-offset-75 {
+            margin-top: -75%;
+        }
+
+        .margin-top-add-50 {
+            margin-top: 50%;
+        }
+
+        // START CUSTOM STYLING
+
+        .bg-img.float-r.flower {
+            // margin-right: -30%;
+            margin-top: -5;
+            width: 80%;
+            height: 140vh;
+        }
+
+        .bg-img.float-r.greendress {
+            margin-top: -10%;
+        }
+
+        .bg-img.float-c.tvline {
+            background-size: contain;
+            margin-left: -30%;
+            height: 290vh;
+            // margin-top: -40%;
+        }
+
+        .bg-img.center.jules {
+            margin-top: -140%;
+        }
+
+        .bg-img.float-l.florals {
+            width: 50%;
+            margin-top: 10%;
+        }
+
+        .bg-img.float-r.blob {
+            height: 50vh;
+            width: 70%;
+            margin-top: 70%;
+            margin-right: -35%;
+        }
+
+        // .bg-img.float-l.steve {
+        //     width: 100%;
+        //     background-size: cover;
+        //     height: 170vh;
+        //     margin-top: 10%;
+        //     margin-left: -10%;
+        // }
+
+        //END OF CUSTOM BG
+
     }
-
-    .float-c {
-      margin: 0 auto;
-      /* width: 400px; */
-      background-position: center center;
+    .video {
+        iframe {
+            margin-top: 30px;
+            max-width: 1024px;
+        }
     }
-
-    .float-r {
-      /* float: right; */
-      margin: 0 0 auto auto;
-      background-position-x: right;
-    }
-
-    .combine-r-50 {
-      background-position-x: right;
-      width: 50%;
-      float: right;
-    }
-
-    .combine-r-30 {
-      background-position-x: right;
-      width: 30%;
-      float: right;
-    }
-
-    .combine-r-65 {
-      background-position-x: right;
-      width: 65%;
-      float: right;
-    }
-
-
-    .combine-l-30 {
-      background-position-x: left;
-      width: 30%;
-      float: left;
-    }
-
-    .combine-l-50 {
-      background-position-x: left;
-      width: 50%;
-      float: left;
-    }
-
-    .combine-c-100 {
-      /* background-position-x: left; */
-      width: 100%;
-      position: absolute;
-      /* float: left; */
-    }
-
-    .center {
-      text-align: center;
-    }
-
-    .margin-top-offset-15 {
-      margin-top: -15%;
-    }
-
-    .margin-top-offset-35 {
-      margin-top: -35%;
-    }
-
-    .margin-top-offset-50 {
-      margin-top: -50%;
-    }
-
-    .margin-top-offset-75 {
-      margin-top: -75%;
-    }
-
-    .margin-top-add-50 {
-      margin-top: 50%;
-    }
-
-    .bg-img.float-r.flower {
-      margin-right: -30%;
-      margin-top: -5;
-      width: 80%;
-      height: 140vh;
-    }
-
-    .bg-img.float-r.greendress {
-      margin-top: -10%;
-    }
-
-    .bg-img.float-c.tvline {
-      background-size: contain;
-      margin-left: -30%;
-      height: 290vh;
-      margin-top: -40%;
-    }
-
-    .bg-img.center.jules {
-      margin-top: -150%;
-    }
-
-    .bg-img.float-l.florals {
-      width: 50%;
-      margin-top: 10%;
-    }
-
-    .bg-img.float-r.blob {
-      height: 50vh;
-      width: 70%;
-      margin-top: 70%;
-      margin-right: -35%;
-    }
-
-    .bg-img.float-l.steve {
-      width: 100%;
-      background-size: cover;
-      height: 170vh;
-      margin-top: 10%;
-      margin-left: -10%;
-    }
-
-    //END OF CUSTOM BG
-
-  }
-  .video {
-    iframe {
-      margin-top: 30px;
-      max-width:1024px;
-    }
-  }
 }
 
 .video {
-  iframe {
-    margin-top: 30px;
-    max-width: 100%;
-  }
+    iframe {
+        margin-top: 30px;
+        max-width: 100%;
+    }
 }
-
 </style>
