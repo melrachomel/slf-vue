@@ -181,7 +181,7 @@ export default {
 <style lang="scss">
 #gallery .page-logo {
     position: static;
-    max-width: 100%;
+    max-width: 400px;
 }
 
 #gallery {
@@ -240,11 +240,33 @@ export default {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
+    #gallery {
+        .page-logo {
+            max-width: 370px;
+        }
+        .bg-img.l-illustration {
+            width: 350px;
+            height: 40vh;
+            float: left;
+            position: absolute;
+            left: -7%;
+            top: 40%;
+        }
 
-    #gallery .page-logo {
-        max-width: 370px;
+        .bg-img.r-illustration {
+            width: 350px;
+            height: 40vh;
+            float: right;
+            position: absolute;
+            right: 0;
+            top: 40%;
+        }
     }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
 
     #gallery {
         .rows {
@@ -271,8 +293,8 @@ export default {
                 width: 350px;
                 height: 40vh;
                 float: left;
-                position: absolute;
-                left: 0;
+                position: static;
+                // left: 0;
                 top: 40%;
             }
 
@@ -280,7 +302,7 @@ export default {
                 width: 350px;
                 height: 40vh;
                 float: right;
-                position: absolute;
+                position: static;
                 right: 0;
                 top: 40%;
             }

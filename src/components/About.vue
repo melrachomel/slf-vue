@@ -1,5 +1,5 @@
 <template>
-<div class="cont">
+<div class="cont about">
   <div id="about">
     <div class="rows animated fadeIn ">
       <div class="bio-text">
@@ -74,53 +74,49 @@ export default {
 </script>
 
 <style lang="scss">
-#about .page-logo {
-    position: static;
-    max-width: 100%;
-
-}
-
 #about {
-    .bio-text {
-        height: 130vh;
-    }
-    .bio-img {
-        background-image: url("../assets/abt_bg.png");
-    }
-    .bio-text {
-        width: 100%;
-        margin: 0 auto;
-        // height: auto;
-        p {
-            color: #ed2d2d;
-            font-weight: bold;
-            font-size: 1.5em;
-        }
+
+    .rows {
+      .page-logo {
+          position: static;
+          max-width: 400px;
+      }
+      .bio-text {
+          height: auto;
+      }
+      .bio-img {
+          background-image: url("../assets/abt_bg.png");
+      }
+      .bio-text {
+          width: 100%;
+          margin: 0 auto;
+          // height: auto;
+          p {
+              color: #ed2d2d;
+              font-weight: bold;
+              font-size: 1.5em;
+          }
+      }
+
+      .abt-text {
+          position: static;
+      }
+
+      .bg-img.l-illustration {
+          position: static;
+
+      }
+
+      .bg-img.r-illustration {
+          position: static;
+      }
     }
 
-    .abt-text {
-        position: static;
-    }
-
-    .bg-img.l-illustration {
-        width: 100%;
-        height: 20vh;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-
-    .bg-img.r-illustration {
-        width: 100%;
-        height: 20vh;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
 
 }
 
-#contact {
+.about.cont #contact {
+    position: static;
     .contact-img {
         img {
             max-width: 200px;
@@ -135,25 +131,45 @@ export default {
     }
 }
 
-@media screen and (min-height: 916px) {
-    #about {
-        .bio-text {
-            height: 75vh;
-        }
-    }
-}
+// @media screen and (min-height: 700px) {
+//     .about.cont {
+//         #about {
+//             .rows {
+//
+//                 .bg-img.l-illustration {
+//                     position: static;
+//                 }
+//
+//                 .abt-text,
+//                 .bio-text {
+//                     height: auto;
+//                 }
+//
+//                 .abt-text {
+//                     position: static;
+//                 }
+//             }
+//
+//         }
+//         // .about.cont #contact {
+//         //   position: static;
+//         //   height: auto;
+//         // }
+//     }
+//
+// }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) and (min-height: 666px){
 
-    #about .page-logo {
-        max-width: 300px;
-    }
 
     #about {
         .rows {
 
+          .page-logo {
+              max-width: 300px;
+          }
+
             .bio-img {
-                background-image: url("../assets/abt_bg.png");
                 background-size: contain;
                 background-repeat: no-repeat;
                 height: 100vh;
@@ -171,8 +187,8 @@ export default {
                 height: 40vh;
                 float: left;
                 position: absolute;
-                left: 0;
-                top: 40%;
+                left: -5%;
+                top: 50%;
             }
 
             .bg-img.r-illustration {
@@ -180,11 +196,17 @@ export default {
                 height: 40vh;
                 float: right;
                 position: absolute;
-                right: 0;
-                top: 40%;
+                right: -5%;
+                top: 50%;
             }
 
         }
+    }
+
+    .about.cont #contact {
+      position: absolute;
+      width: 100%;
+      bottom: -40%;
     }
 
 }

@@ -67,7 +67,7 @@ html {
     * {
         transition: all 0.1s ease-in;
         transition-property: all;
-        transition-duration: 500ms;
+        transition-duration: 250ms;
         transition-timing-function: ease-in;
         transition-delay: 0s;
     }
@@ -78,7 +78,6 @@ html {
         right: 0;
         top: 0;
         color: #ed2d2d;
-        font-size: 1.5em;
         font-weight: bolder;
         z-index: 99999;
         ul {
@@ -88,7 +87,8 @@ html {
             li {
                 display: table-cell;
                 padding: 10px;
-                font-size: 1.5em;
+                text-align: center;
+                font-size: 1.25em
             }
         }
         a {
@@ -112,7 +112,6 @@ html {
             right: 5%;
             top: 0;
             color: #ed2d2d;
-            font-size: 1.5em;
             font-weight: bolder;
             z-index: 99999;
 

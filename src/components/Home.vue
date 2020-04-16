@@ -278,6 +278,13 @@ a:hover {
         margin-top: 0%;
     }
 
+    .bg-img.float-c.tvline {
+        background-size: contain;
+        margin-left: -30%;
+        height: 200vh;
+        // margin-top: -40%;
+    }
+
     .bg-img.center.jules {
       height: 160vh;
     }
@@ -320,7 +327,7 @@ a:hover {
         .bg-img.float-c.tvline {
             background-size: contain;
             margin: 0 auto;
-            height: 100vh;
+            height: 290vh;
             margin-top: -20%;
         }
 
@@ -502,7 +509,7 @@ a:hover {
         .bg-img.float-c.tvline {
             background-size: contain;
             margin-left: -30%;
-            height: 290vh;
+            // height: 200vh;
             // margin-top: -40%;
         }
 
