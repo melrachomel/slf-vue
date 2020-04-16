@@ -15,7 +15,7 @@
     <!-- Row5 - embedded  -->
     <div class="bg-img float-c center tvline" :style="{ backgroundImage: `url(${backgroundUrl6})` }"></div>
     <!-- Row6  -->
-    <div class="bg-img float-c center margin-top-offset-50 jules" :style="{ backgroundImage: `url(${backgroundUrl7})` }"></div>
+    <div class="bg-img float-c center jules" :style="{ backgroundImage: `url(${backgroundUrl7})` }"></div>
     <!-- Row7 -->
     <div class="bg-img float-r combine-r-50 greendress" :style="{ backgroundImage: `url(${backgroundUrl8})` }"></div>
     <!-- Row8 -->
@@ -237,13 +237,13 @@ a:hover {
 .bg-img.float-r.steve_alt {
     width: 80%;
     height: 70vh;
-    margin-top: -65%;
-    margin-right: -20%;
+    margin-top: -45%;
+    margin-right: -10%;
 }
 
 .bg-img.float-r.foundfilm {
     height: 40vh;
-    margin-top: -20%;
+    margin-top: -10%;
     width: 100%;
     background-position: center center;
     background-size: contain;
@@ -272,7 +272,7 @@ a:hover {
 @media screen and (min-width: 1366px) {
   .rows {
     .bg-img.float-r.flower {
-        margin-right: -40%;;
+        margin-right: -30%;;
         width: 100%;
         height: 100vh;
         margin-top: 0%;
@@ -282,11 +282,12 @@ a:hover {
         background-size: contain;
         margin-left: -30%;
         height: 200vh;
-        // margin-top: -40%;
+        margin-top: -20%;
     }
 
     .bg-img.center.jules {
-      height: 160vh;
+      height: 150vh;
+      margin-top: -110%;
     }
 
     .bg-img.float-l.steve {
@@ -299,7 +300,7 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1365px) {
+@media screen and (min-width: 1264px) and (max-width: 1405px) {
 
     .rows {
         /* INDIVIDUAL EL STYLING */
@@ -332,7 +333,7 @@ a:hover {
         }
 
         .bg-img.center.jules {
-            margin-top: 0;
+            margin-top: -150%;
             height: 160vh;
 
         }
@@ -513,9 +514,9 @@ a:hover {
             // margin-top: -40%;
         }
 
-        .bg-img.center.jules {
-            margin-top: -140%;
-        }
+        // .bg-img.center.jules {
+        //     margin-top: -140%;
+        // }
 
         .bg-img.float-l.florals {
             width: 50%;
@@ -528,14 +529,6 @@ a:hover {
             margin-top: 70%;
             margin-right: -35%;
         }
-
-        // .bg-img.float-l.steve {
-        //     width: 100%;
-        //     background-size: cover;
-        //     height: 170vh;
-        //     margin-top: 10%;
-        //     margin-left: -10%;
-        // }
 
         //END OF CUSTOM BG
 
