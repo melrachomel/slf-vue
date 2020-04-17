@@ -237,7 +237,7 @@ a:hover {
 .bg-img.float-r.steve_alt {
     width: 80%;
     height: 70vh;
-    margin-top: -45%;
+    margin-top: -60%;
     margin-right: -10%;
 }
 
@@ -286,14 +286,14 @@ a:hover {
     }
 
     .bg-img.center.jules {
-      height: 150vh;
+      height: 130vh;
       margin-top: -110%;
     }
 
     .bg-img.float-l.steve {
         width: 100%;
         background-size: cover;
-        height: 170vh;
+        height: 200vh;
         margin-top: 10%;
         margin-left: -10%;
     }
@@ -334,7 +334,7 @@ a:hover {
 
         .bg-img.center.jules {
             margin-top: -150%;
-            height: 160vh;
+            height: 140vh;
 
         }
 
