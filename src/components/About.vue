@@ -29,20 +29,7 @@
     </div>
 
   </div>
-  <div id="contact">
-
-    <div class="rows">
-      <div class="contact-img">
-        <img src="../assets/abt_contact.png" alt="Contact Beth">
-      </div>
-      <div class="contact-text">
-        <p>Bethany Rose Puttkemery (she/her)<br>
-          <a href="mailto:hello@smellslikeflowers.com">hello@smellslikeflowers.com</a><br>
-          <a href="#">@bethanyroserose</a>
-        </p>
-      </div>
-    </div>
-  </div>
+  <contact></contact>
 </div>
 </template>
 
@@ -67,9 +54,7 @@ export default {
 
     }
   },
-  mounted() {
 
-  }
 }
 </script>
 
@@ -130,34 +115,6 @@ export default {
         }
     }
 }
-
-// @media screen and (min-height: 700px) {
-//     .about.cont {
-//         #about {
-//             .rows {
-//
-//                 .bg-img.l-illustration {
-//                     position: static;
-//                 }
-//
-//                 .abt-text,
-//                 .bio-text {
-//                     height: auto;
-//                 }
-//
-//                 .abt-text {
-//                     position: static;
-//                 }
-//             }
-//
-//         }
-//         // .about.cont #contact {
-//         //   position: static;
-//         //   height: auto;
-//         // }
-//     }
-//
-// }
 
 @media screen and (min-width: 1280px) and (min-height: 666px){
 

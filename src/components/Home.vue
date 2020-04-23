@@ -33,19 +33,8 @@
 
   </div>
   <!-- end rows -->
-  <div id="contact" class="clearfix">
-    <div class="rows">
-      <div class="contact-img">
-        <img src="../assets/abt_contact.png" alt="Contact Beth">
-      </div>
-      <div class="contact-text">
-        <p>Bethany Rose Puttkemery (she/her)<br>
-          <a href="mailto:hello@smellslikeflowers.com">hello@smellslikeflowers.com</a><br>
-          <a href="#">@bethanyroserose</a>
-        </p>
-      </div>
-    </div>
-  </div>
+  <contact></contact>
+
 
   <!-- <div class="video">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/AJX8I7fWtcg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

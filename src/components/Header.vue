@@ -21,7 +21,7 @@
         <li v-if="['home', 'about'].indexOf($route.name) > -1">
           <router-link to="/gallery"><strong>Gallery</strong></router-link>
         </li>
-        <li><a href="https://smells-like-flowers.myshopify.com/"><strong>Shop</strong></a></li>
+        <li v-if="['home', 'about', 'gallery'].indexOf($route.name) > -1"><a href="https://smells-like-flowers.myshopify.com/"><strong>Shop</strong></a></li>
 
 
 
@@ -44,6 +44,6 @@
     position: absolute;
     height: 100px;
     width: 100%;
-    z-index: 9999;
+    // z-index: 200;
 }
 </style>
