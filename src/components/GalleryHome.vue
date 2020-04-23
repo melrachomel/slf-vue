@@ -2,7 +2,7 @@
   <div>
     <div>
       <div class="gallery" v-for="pic in pics" v-bind:key="pic.id">
-        <a :href="'/#/gallery/album/' + pic.id">
+        <a :href="'/dev/#/gallery/album/' + pic.id">
           <img :src="pic.src" :alt="pic.name" />
         </a>
       </div>
@@ -13,8 +13,6 @@
 
 <script>
 // import Header from '@/components/Header.vue'
-import backgroundUrl1 from '@/assets/gallery_left.png'
-import backgroundUrl2 from '@/assets/gallery_right.png'
 
 import album1 from '@/assets/album_5.png'
 import album2 from '@/assets/album_3.png'
@@ -39,8 +37,7 @@ export default {
   data() {
     return {
       info: null,
-      backgroundUrl1,
-      backgroundUrl2,
+      
       pics: [{
           id: 1,
           src: album1,

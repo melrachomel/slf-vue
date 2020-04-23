@@ -128,7 +128,7 @@ export default {
             max-width: 370px;
         }
         .bg-img.l-illustration {
-            width: 350px;
+            width: 290px;
             height: 40vh;
             float: left;
             position: absolute;
@@ -137,11 +137,11 @@ export default {
         }
 
         .bg-img.r-illustration {
-            width: 350px;
+            width: 290px;
             height: 40vh;
             float: right;
             position: absolute;
-            right: 0;
+            right: -5%;
             top: 40%;
         }
     }

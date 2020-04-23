@@ -13,8 +13,6 @@
 
 <script>
 // import Header from '@/components/Header.vue'
-import backgroundUrl1 from '@/assets/gallery_left.png'
-import backgroundUrl2 from '@/assets/gallery_right.png'
 
 import album1 from '@/assets/album_5.png'
 import album2 from '@/assets/album_3.png'
@@ -38,8 +36,7 @@ export default {
   data() {
     return {
       info: null,
-      backgroundUrl1,
-      backgroundUrl2,
+      
       pics: [{
           id: 1,
           src: album1,
