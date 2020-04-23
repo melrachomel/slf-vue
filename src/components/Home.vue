@@ -253,7 +253,7 @@ a:hover {
         p {
             color: #ed2d2d;
             font-weight: bold;
-            font-size: 1.5em;
+            font-size: 1.15em;
         }
     }
 }

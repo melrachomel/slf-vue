@@ -1,8 +1,8 @@
 <template>
-<div>
+<div class="clearfix">
   <div class="container" v-for="pic in pics" :key="pic.id">
     <div v-if="$route.params.id == pic.id">
-      <h2>{{pic.name}}</h2>
+      <h2 class="album-title">{{pic.name}}</h2>
       <div v-html="pic.html"></div>
 
     </div>
@@ -36,7 +36,7 @@ export default {
   data() {
     return {
       info: null,
-      
+
       pics: [{
           id: 1,
           src: album1,
@@ -117,8 +117,10 @@ export default {
 
 <style lang="scss">
 .container {
-    h2 {
+    .album-title {
         margin-left: 10px;
+        color: #ed2d2d;
+        text-align: center;
     }
 }
 </style>

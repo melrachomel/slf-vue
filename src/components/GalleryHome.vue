@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="clearfix">
     <div>
       <div class="gallery" v-for="pic in pics" v-bind:key="pic.id">
         <a :href="'/dev/#/gallery/album/' + pic.id">
@@ -37,7 +37,7 @@ export default {
   data() {
     return {
       info: null,
-      
+
       pics: [{
           id: 1,
           src: album1,

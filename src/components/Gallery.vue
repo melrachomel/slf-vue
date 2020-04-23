@@ -3,13 +3,15 @@
   <div id="gallery">
     <div class="rows animated fadeIn">
       <div class="bio-text">
-        <router-link :to="{ name: 'gallery', params: {} }">
+        <!-- <router-link :to="{ name: 'gallery', params: {} }">
           <img class="page-logo" src="@/assets/gallery_logo.png">
-        </router-link>
-        <div class="bg-img l-illustration" :style="{ backgroundImage: `url(${backgroundUrl1})` }"></div>
-        <div class="bg-img r-illustration" :style="{ backgroundImage: `url(${backgroundUrl2})` }"></div>
+        </router-link> -->
+        <!-- <div class="bg-img l-illustration" :style="{ backgroundImage: `url(${backgroundUrl1})` }"></div>
+        <div class="bg-img r-illustration" :style="{ backgroundImage: `url(${backgroundUrl2})` }"></div> -->
       </div>
+      <div class="bg-img l-illustration" :style="{ backgroundImage: `url(${backgroundUrl1})` }"></div>
       <router-view></router-view>
+      <div class="bg-img r-illustration" :style="{ backgroundImage: `url(${backgroundUrl2})` }"></div>
 
     </div>
 
@@ -66,7 +68,7 @@ export default {
         p {
             color: #ed2d2d;
             font-weight: bold;
-            font-size: 1.5em;
+            font-size: 1.15em;
         }
     }
     .gallery {
@@ -86,6 +88,7 @@ export default {
     }
 
     .bg-img.l-illustration {
+        margin-top: 10%;
         width: 100%;
         height: 20vh;
         background-size: contain;
@@ -94,6 +97,7 @@ export default {
     }
 
     .bg-img.r-illustration {
+        margin-top: 10%;
         width: 100%;
         height: 20vh;
         background-size: contain;
@@ -117,7 +121,7 @@ export default {
         p {
             color: #ed2d2d;
             font-weight: bold;
-            font-size: 1.5em;
+            font-size: 1.15em;
         }
     }
 }
@@ -128,21 +132,23 @@ export default {
             max-width: 370px;
         }
         .bg-img.l-illustration {
-            width: 290px;
+          margin-top: 0;
+            width: 350px;
             height: 40vh;
-            float: left;
-            position: absolute;
-            left: -7%;
-            top: 40%;
+            // float: left;
+            // position: absolute;
+            // left: -7%;
+            // top: 40%;
         }
 
         .bg-img.r-illustration {
-            width: 290px;
+          margin-top: 0;
+            width: 350px;
             height: 40vh;
-            float: right;
-            position: absolute;
-            right: -5%;
-            top: 40%;
+            // float: right;
+            // position: absolute;
+            // right: -5%;
+            // top: 40%;
         }
     }
 
@@ -166,16 +172,11 @@ export default {
                 width: 80%;
             }
 
-            .abt-text {
-                position: absolute;
-                z-index: 1000;
-                max-width: 1024px;
-            }
 
             .bg-img.l-illustration {
                 width: 350px;
                 height: 40vh;
-                float: left;
+                // float: left;
                 position: static;
                 // left: 0;
                 top: 40%;
@@ -184,7 +185,7 @@ export default {
             .bg-img.r-illustration {
                 width: 350px;
                 height: 40vh;
-                float: right;
+                // float: right;
                 position: static;
                 right: 0;
                 top: 40%;

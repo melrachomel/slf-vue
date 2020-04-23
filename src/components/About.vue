@@ -3,7 +3,7 @@
   <div id="about">
     <div class="rows animated fadeIn ">
       <div class="bio-text">
-        <img class="page-logo" src="@/assets/abt_logo.png">
+        <!-- <img class="page-logo" src="@/assets/abt_logo.png"> -->
         <!-- <div class="bg-img" style="background-image: url('@/assets/abt_left.png')"></div> -->
         <div class="bg-img l-illustration" :style="{ backgroundImage: `url(${backgroundUrl1})` }"></div>
 
@@ -30,6 +30,8 @@
 
   </div>
   <contact></contact>
+
+
 </div>
 </template>
 
@@ -79,7 +81,7 @@ export default {
           p {
               color: #ed2d2d;
               font-weight: bold;
-              font-size: 1.5em;
+              font-size: 1.15em;
           }
       }
 
@@ -111,12 +113,12 @@ export default {
         p {
             color: #ed2d2d;
             font-weight: bold;
-            font-size: 1.5em;
+            font-size: 1.25em;
         }
     }
 }
 
-@media screen and (min-width: 1280px) and (min-height: 666px){
+@media screen and (min-height: 666px){
 
 
     #about {
@@ -134,27 +136,27 @@ export default {
             }
 
             .abt-text {
-                position: absolute;
-                z-index: 1000;
+                // position: absolute;
+                // z-index: 1000;
                 max-width: 1024px;
             }
 
             .bg-img.l-illustration {
                 width: 350px;
                 height: 40vh;
-                float: left;
-                position: absolute;
-                left: -5%;
-                top: 50%;
+                // float: left;
+                // position: absolute;
+                // left: -5%;
+                // top: 50%;
             }
 
             .bg-img.r-illustration {
                 width: 350px;
                 height: 40vh;
-                float: right;
-                position: absolute;
-                right: -5%;
-                top: 50%;
+                // float: right;
+                // position: absolute;
+                // right: -5%;
+                // top: 50%;
             }
 
         }
@@ -163,7 +165,7 @@ export default {
     .about.cont #contact {
       position: absolute;
       width: 100%;
-      bottom: -40%;
+      bottom: -85%;
     }
 
 }
