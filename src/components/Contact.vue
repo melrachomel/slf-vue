@@ -11,7 +11,7 @@
           <a href="mailto:hello@smellslikeflowers.com">hello@smellslikeflowers.com</a><br>
           <a href="#">@bethanyroserose</a>
         </p>
-        <div v-if="['about'].indexOf($route.name) > -1" class="powr-social-feed" id="b710ff9b_1587487917"></div>
+        <!-- <div v-if="['about'].indexOf($route.name) > -1" class="powr-social-feed" id="b710ff9b_1587487917"></div> -->
         <div class="powr-social-media-icons" id="63ad2b40_1587490701"></div>
 
         <div id="copyright">

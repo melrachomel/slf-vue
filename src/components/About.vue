@@ -9,8 +9,7 @@
 
         <div class="abt-text">
 
-          <p><em>Smells Like Flowers</em> understands that flowers shift the energy of a space. For that reason, creator, Bethany Rose Puttkemery, specializes in environmental installation. Her goal is to always capture a precise feeling and moment
-            in time. The result is nuanced design that is immensely customized for each of her clients.</p>
+          <p><em>Smells Like Flowers</em> understands that flowers shift the energy of a space. For that reason, creator, Bethany Rose Puttkemery, specializes in environmental installation. Her goal is to always capture a precise feeling and moment in time. The result is nuanced design that is immensely customized for each of her clients.</p>
 
           <p>As a queer womxn Puttkemery prioritizes collaborations and clients that support and uplift her community.</p>
 
@@ -82,6 +81,7 @@ export default {
               color: #ed2d2d;
               font-weight: bold;
               font-size: 1.15em;
+              letter-spacing: 2px;
           }
       }
 
@@ -138,12 +138,15 @@ export default {
             .abt-text {
                 // position: absolute;
                 // z-index: 1000;
-                max-width: 1024px;
+                max-width: 764px;
+                margin: 0 auto;
             }
 
             .bg-img.l-illustration {
-                width: 350px;
+                width: 300px;
                 height: 40vh;
+                // margin-top: 6%;
+                // margin-bottom: -10%;
                 // float: left;
                 // position: absolute;
                 // left: -5%;
@@ -151,7 +154,7 @@ export default {
             }
 
             .bg-img.r-illustration {
-                width: 350px;
+                width: 300px;
                 height: 40vh;
                 // float: right;
                 // position: absolute;
@@ -163,9 +166,9 @@ export default {
     }
 
     .about.cont #contact {
-      position: absolute;
-      width: 100%;
-      bottom: -85%;
+      // position: absolute;
+      // width: 100%;
+      // bottom: -85%;
     }
 
 }
