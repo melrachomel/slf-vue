@@ -163,6 +163,7 @@ a:hover {
 
 .bg-img.float-r.fountain {
     margin-right: 10%;
+    margin-top: 30%;
 }
 
 // .bg-img.float-r.flower {
@@ -258,35 +259,43 @@ a:hover {
     }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 768px) {
   .rows {
-    .bg-img.float-r.flower {
-        margin-right: -30%;;
-        width: 100%;
-        height: 100vh;
-        margin-top: 0%;
-    }
-
-    .bg-img.float-c.tvline {
-        background-size: contain;
-        margin-left: -30%;
-        height: 200vh;
-        margin-top: -20%;
-    }
-
-    .bg-img.center.jules {
-      height: 130vh;
-      margin-top: -110%;
-    }
-
-    .bg-img.float-l.steve {
-        width: 100%;
-        background-size: cover;
-        height: 200vh;
-        margin-top: 10%;
-        margin-left: -10%;
+    .bg-img.float-r.fountain {
+      margin-top: initial;
     }
   }
+}
+
+@media screen and (min-width: 1366px) {
+    .rows {
+        .bg-img.float-r.flower {
+            margin-right: -30%;
+            width: 100%;
+            height: 100vh;
+            margin-top: 0;
+        }
+
+        .bg-img.float-c.tvline {
+            background-size: contain;
+            margin-left: -30%;
+            height: 200vh;
+            margin-top: -20%;
+        }
+
+        .bg-img.center.jules {
+            height: 130vh;
+            margin-top: -110%;
+        }
+
+        .bg-img.float-l.steve {
+            width: 100%;
+            background-size: cover;
+            height: 200vh;
+            margin-top: 10%;
+            margin-left: -10%;
+        }
+    }
 }
 
 @media screen and (min-width: 1264px) and (max-width: 1405px) {
@@ -301,6 +310,7 @@ a:hover {
 
         .bg-img.float-r.fountain {
             margin-right: 10%;
+            margin-top: initial;
         }
 
         .bg-img.float-r.flower {

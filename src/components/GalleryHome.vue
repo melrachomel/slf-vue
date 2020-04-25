@@ -98,7 +98,7 @@ export default {
           src: album8,
           name: 'For Forever',
           url: '#',
-          html: '<div class="powr-media-gallery" id="078707b0_1587153548"></div>'
+          html: '<div class="powr-media-gallery" id="cb84601e_1587479113"></div>'
 
         }
       ]
