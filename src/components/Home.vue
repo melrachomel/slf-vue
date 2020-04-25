@@ -115,9 +115,9 @@ export default {
 
 <style lang="scss">
 #site-logo {
-    margin-top: 100px;
+    margin-top: 5%;
     position: absolute;
-    max-width: 300px;
+    max-width: 180px;
 }
 
 h3 {

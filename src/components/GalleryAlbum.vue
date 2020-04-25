@@ -1,7 +1,7 @@
 <template>
 <div class="clearfix">
   <div class="container" v-for="pic in pics" :key="pic.id">
-    <div v-if="$route.params.id == pic.id">
+    <div class="album" v-if="$route.params.id == pic.id">
       <h2 class="album-title">{{pic.name}}</h2>
       <div v-html="pic.html"></div>
 
@@ -104,23 +104,44 @@ export default {
     }
   },
   mounted() {
-    // let googlePhotoScript = document.createElement('script')
-    // googlePhotoScript.setAttribute('src', 'https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js')
-    // document.head.appendChild(googlePhotoScript)
+    // this.moveToBack()
 
     let galleryScript = document.createElement('script')
     galleryScript.setAttribute('src', 'https://www.powr.io/powr.js?platform=wordpress')
     document.head.appendChild(galleryScript)
+  },
+  methods: {
+    // moveToBack() {
+    //   var el = document.querySelector(".menu");
+    //   el.setAttribute("id", "album");
+    //
+    //   document.addEventListener('click', function (event) {
+    //     if (event.target.closest('.cont')) {
+    //       document.getElementById("album").setAttribute("style", "display:none")
+    //     }
+    //
+    //   }, false)
+    // }
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container {
     .album-title {
-        margin-left: 10px;
+      margin: 15% 0;
         color: #ed2d2d;
         text-align: center;
     }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+      .album-title {
+          margin: initial;
+          color: #ed2d2d;
+          text-align: center;
+      }
+  }
 }
 </style>

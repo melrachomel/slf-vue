@@ -22,11 +22,15 @@
           <router-link to="/gallery"><strong>Gallery</strong></router-link>
         </li>
         <li v-if="['home', 'about', 'gallery'].indexOf($route.name) > -1"><a href="https://smells-like-flowers.myshopify.com/"><strong>Shop</strong></a></li>
-        <li v-if="$route.path.includes('album')">
-          <router-link to="/gallery"><strong>Back to Galleries</strong></router-link>
-        </li>
-
         <!-- <li><a href="mailto:hello@smellslikeflowers.com"><strong>Contact</strong></a></li> -->
+      </ul>
+    </div>
+
+    <div class="galleries" v-if="$route.path.includes('album')">
+      <ul>
+        <li>
+          <router-link to="/gallery"><strong>&#8249; Galleries</strong></router-link>
+        </li>
       </ul>
     </div>
   </nav>
@@ -46,5 +50,26 @@
     height: 100px;
     // width: 100%;
     z-index: 9999;
+
+    .galleries {
+      position: absolute;
+      top: 180px;
+      width: 150px;
+      color: #ed2d2d;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+.head {
+  .galleries {
+    position: fixed;
+    top: 300px;
+    width: 150px;
+    color: #ed2d2d;
+  }
+}
+
 }
 </style>

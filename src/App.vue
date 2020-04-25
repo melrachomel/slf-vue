@@ -1,30 +1,7 @@
 <template>
 <div id="app">
-  <!-- {{ info }} -->
-  <!-- <Header msg="Smells Like Flowers"/> -->
-
-  <!-- <Home /> -->
   <Header msg="Smells Like Flowers ~ Home" />
   <router-view></router-view>
-  <!-- <a href="mailto:hello@smellslikeflowers.com"><img src="./assets/slf_coming_soon.png" alt="coming soon"></a> -->
-  <!-- <div class="video">
-      <iframe src="https://player.vimeo.com/video/391521073" width="640" height="352" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    </div> -->
-
-  <!-- <div class="ig">
-    <vue-instagram token="accessTokenHere" :count="5" :tags="['hashtag1', 'hashtag2']" mediaType="image">
-      <template v-slot:loading="props">
-        <h1 v-if="props.loading" class="fancy-loading">Loading, please wait...</h1>
-      </template>
-      <template v-slot:feeds="props">
-        <li class="fancy-list"> {{ props.feed.link }} </li>
-      </template>
-      <template v-slot:error="props">
-        <div class="fancy-alert"> {{ props.error.error_message }} </div>
-      </template>
-    </vue-instagram>
-    </div> -->
-
 
 </div>
 </template>
@@ -37,16 +14,12 @@ export default {
   name: 'app',
   components: {
     Header,
-    // Home
-    // VueInstagram
   },
-  // el: '#app',
   data() {
     return {
       info: null
     }
-  },
-  mounted() {}
+  }
 }
 </script>
 
@@ -73,7 +46,7 @@ html {
     }
 
     .menu {
-        width: 100%;
+        // width: 100%;
         position: fixed;
         right: 0;
         top: 0;
