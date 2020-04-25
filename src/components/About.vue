@@ -138,7 +138,7 @@ export default {
             .abt-text {
                 // position: absolute;
                 // z-index: 1000;
-                max-width: 764px;
+                max-width: 768px;
                 margin: 0 auto;
             }
 

@@ -116,7 +116,7 @@ export default {
 <style lang="scss">
 #site-logo {
     margin-top: 100px;
-    position: static;
+    position: absolute;
     max-width: 300px;
 }
 
@@ -377,7 +377,7 @@ a:hover {
             width: 80%;
             height: 70vh;
             margin-top: -60%;
-            margin-right: 0%;
+            margin-right: 0;
         }
 
         .bg-img.float-r.foundfilm {
