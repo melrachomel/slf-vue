@@ -129,6 +129,7 @@ export default {
 <style lang="scss" scoped>
 .container {
     .album-title {
+      font-size: 1.15em;
       margin: 15% 0;
         color: #ed2d2d;
         text-align: center;
@@ -138,6 +139,7 @@ export default {
 @media screen and (min-width: 768px) {
   .container {
       .album-title {
+          font-size: 1.5em;
           margin: initial;
           color: #ed2d2d;
           text-align: center;

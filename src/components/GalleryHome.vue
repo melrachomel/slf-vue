@@ -2,7 +2,7 @@
   <div class="clearfix">
     <div>
       <div class="gallery" v-for="pic in pics" v-bind:key="pic.id">
-        <a :href="'/dev/#/gallery/album/' + pic.id">
+        <a :href="'/#/gallery/album/' + pic.id">
           <img :src="pic.src" :alt="pic.name" />
         </a>
       </div>
